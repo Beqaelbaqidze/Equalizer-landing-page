@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans';
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/bg-main-mobile.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: #F2F2F2;
+}
+.main-container{
+    justify-content: center;
+    display: block;
+    height: 100vh;
+    position: relative;
+    object-position: center;
+    margin: 0;
+    padding: 0;
+}
+.top-container{    
+    justify-content: center;
+    padding: 24px;    
+
+}
+.log-top{
+    margin-top: 40px ;
+    margin-bottom: 50px;
+}
+.h1-1{
+    margin-bottom: 20px;
+    width: 330px;
+    font-size: 40px;
+}
+.p1-1{
+    margin-bottom: 208px;
+    width: 330px;
+}
+.mid-back{ 
+    display: flex;
+    padding: 0;
+    align-items: center;
+    height: 600px;
+    max-width: 1100px;
+    background-image: url(assets/bg-pattern-2.svg);
+    background-position: top ;
+    background-repeat: no-repeat;
+    background-color: #191826;
+    border-radius: 12px;
+    
+}
+.mob-img{
+    margin: auto;
+    margin-top: -140px;
+    width: 210px;
+    height: 430px;
+
+}
+.mid-posit{
+    margin-top: -200px;
+    margin-left: 0px;
+    width: 400px;
+}
+.mid-cont{
+    
+    padding: 24px;
+    background-color: #FA7453;
+    border-radius: 12px;
+    width: 375px;
+    height: 546px;
+}
+.h1-2{
+    font-style: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FCFAF9;
+    margin-bottom: 32px;
+}
+.p1-2{
+    color: #FCFAF9;
+    line-height: 28px;
+    font-size: 18px;
+    max-width: 345px;
+}
+.h1-3{
+    margin-top: 36px;
+    margin-bottom: 32px;
+    font-size: 65px;
+    color: #FCFAF9;
+}
+span{
+    font-size: 20px;
+        
+    
+}
+.btn-cont{
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    height: 61px;
+    
+    
+}
+.btn-apple{
+    background-color: #191826;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    width: 296px;
+    height: 61px;
+    padding: 15px;
+    color: #FCFAF9;
+    border: 0;
+    text-align: center;
+}
+.btn-andro{
+    text-align: center;
+    background-color: #FCFAF9;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    width: 296px;
+    height: 61px;
+    padding: 15px;
+    color: #191826;
+    border: 0;
+}
+.bot-container{
+    padding: 24px;
+    margin-top: 64px;
+    height: 350px;
+    min-width: 768px;
+}
+.log-bot{
+    width:  145px ;
+    height: 32px;
+}
+.p1-4{
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #191826;
+    margin-bottom: 64px;
+    width: 340px;
+}
+a{
+    text-decoration: none;
+    color: #191826;
+    font-weight: 600;
+    
+}
+.comunity{
+    display: flex;
+    justify-content: left;
+    margin-right: 250px;
+}
+.inst{
+    margin: 0px 20px 0px 20px;
+}
+@media (min-width: 768px){
+    body{
+        background-repeat: repeat-x;
+    }
+    .main-container{
+        background-image: url(assets/bg-pattern-1.svg);
+        background-repeat: no-repeat;
+        background-position: right -30px top -30px;
+    }
+    .h1-1{
+        font-size: 64px;
+        width: 400px;
+    }
+    .p1-1{
+        width: 410px;
+    }
+    .top-back{
+        width: 696px;
+        margin: auto;
+    }
+    .mob-img{
+        margin-left: 64px;
+        margin-top: -80px;
+    }
+    .mid-posit{
+        margin-top: -450px;
+        margin-left: 220px;
+        position: absolute;
+        
+    }
+    .bot-container{
+        margin-top: 150px;
+    }
+    .p1-4{
+        min-width: 400px;
+    }
+    .footer1{
+      
+        justify-content: space-between;
+    }
+    .comunity{
+        position: relative;
+        justify-content: right;
+        margin-top: -135px;
+        height: 20px;
+        margin-left: 630px ;
+    }
+}
+@media (min-width: 1440px){
+    .top-container{
+        margin-left: 165px;
+    }
+    .h1-1{
+        font-size: 88px;
+        width: 800px;
+    }
+    .p1-1{
+        width: 620px;
+    }
+    .top-back{
+        width: 1110px;
+        margin: auto;
+    }
+    .mid-back{
+        background-position-x:250px ;
+        background-position-y: -50px;
+    }
+    .mob-img{
+        margin-left: 120px;
+    }
+    .mid-posit{
+        margin-left:870px;
+        width: 446px;
+    }
+    .bot-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .footer1{
+        margin-top: 105px;
+        justify-content: space-between;
+    }
+    .log-bot{
+        margin-top: 150px;
+        margin-left: 165px;
+    }
+    .p1-4{
+       margin-left: -100px;
+    }
+
+    
+}
