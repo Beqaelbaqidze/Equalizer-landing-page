@@ -5,18 +5,19 @@
     font-family: 'IBM Plex Sans';
 }
 body{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-image: url(assets/bg-main-mobile.png);
     background-position: right top;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #F2F2F2;
 }
 .main-container{
-    justify-content: center;
-    display: block;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    position: relative;
     object-position: center;
     margin: 0;
     padding: 0;
@@ -40,6 +41,7 @@ body{
     width: 330px;
 }
 .mid-back{ 
+    min-width: 375px;
     display: flex;
     padding: 0;
     align-items: center;
@@ -60,10 +62,13 @@ body{
 
 }
 .mid-posit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: -200px;
-    margin-left: 0px;
-    width: 400px;
+    width: 375px;
 }
+
 .mid-cont{
     
     padding: 24px;
@@ -127,14 +132,18 @@ span{
     border: 0;
 }
 .bot-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 24px;
     margin-top: 64px;
     height: 350px;
-    min-width: 768px;
 }
 .log-bot{
     width:  145px ;
     height: 32px;
+    margin-left: -200px;
 }
 .p1-4{
     margin-top: 32px;
@@ -163,6 +172,7 @@ a{
         background-repeat: repeat-x;
     }
     .main-container{
+        display: block;
         background-image: url(assets/bg-pattern-1.svg);
         background-repeat: no-repeat;
         background-position: right -30px top -30px;
@@ -183,27 +193,38 @@ a{
         margin-top: -80px;
     }
     .mid-posit{
-        margin-top: -450px;
-        margin-left: 220px;
-        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -400px;
         
     }
     .bot-container{
+        align-items: start;
         margin-top: 150px;
+        height: 150px;
+    }
+    .log-bot{
+        margin-left: 0;
     }
     .p1-4{
         min-width: 400px;
     }
     .footer1{
-      
+        width: 100%;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
+
     }
     .comunity{
-        position: relative;
-        justify-content: right;
-        margin-top: -135px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 60px;
+        margin-right: 0;
         height: 20px;
-        margin-left: 630px ;
+
     }
 }
 @media (min-width: 1440px){
@@ -229,7 +250,6 @@ a{
         margin-left: 120px;
     }
     .mid-posit{
-        margin-left:870px;
         width: 446px;
     }
     .bot-container{
@@ -247,7 +267,14 @@ a{
         margin-left: 165px;
     }
     .p1-4{
-       margin-left: -100px;
+       margin-left: calc(25% - 10px);
+    }
+    .comunity{
+        margin-right: 165px;
+    }
+    .btn:hover{        
+        background: #66E2DC;
+        border-radius: 12px;
     }
 
     
